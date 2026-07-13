@@ -1,0 +1,247 @@
+:root {
+  --radius: 1rem;
+  --background: #f7f9f5;
+  --foreground: #131e11;
+  --brand: #55624e;
+  --brand-icon: #647356;
+  --primary: #0f172b;
+  --primary-foreground: #f8fafc;
+  --gradient-hero: linear-gradient(160deg, #f2f7ee 0%, #e4efdf 50%, #d1e5cc 100%);
+  --gradient-card: linear-gradient(145deg, #ffffffe0, #f2f7efa6);
+  --gradient-btn: linear-gradient(135deg, #55624e, #677b62);
+  --shadow-soft: 0 10px 40px -10px #55624e4d;
+  --shadow-card: 0 20px 60px -20px #28312447;
+  --muted-foreground: #62748e;
+  --border: #e2e8f0;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--gradient-hero);
+  color: var(--foreground);
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.eyebrow {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--brand);
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+
+.hero h1 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 2.75rem;
+  margin: 0 0 16px;
+  color: var(--foreground);
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  color: var(--muted-foreground);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--gradient-card);
+  border: 1px solid #ffffff80;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(20px);
+  padding: 32px;
+}
+
+.doctor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.doctor-photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.specialty-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1f5f9;
+  color: var(--brand);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.doctor-card h2 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  margin: 0 0 12px;
+}
+
+.bio {
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  margin: 0 0 24px;
+  max-width: 380px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: var(--gradient-btn);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 16px 24px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.section-title.plain {
+  font-family: var(--font-serif);
+}
+
+.section-title .icon.leaf {
+  color: var(--brand-icon);
+}
+
+.about-text {
+  color: var(--muted-foreground);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-text strong {
+  color: var(--foreground);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.list-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #0f172b1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.list-icon .icon {
+  color: var(--primary);
+}
+
+.list-title {
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.list-desc {
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footnote {
+  margin: 20px 0 0;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--muted-foreground);
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.icon.small {
+  width: 16px;
+  height: 16px;
+}
+
+.page-footer {
+  text-align: center;
+  color: var(--muted-foreground);
+  font-size: 0.85rem;
+  margin-top: 16px;
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}
