@@ -15,6 +15,8 @@
   --border: #e2e8f0;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-poppins: "Poppins", var(--font-sans);
+  --highlight: #55624e;
 }
 
 * {
@@ -236,8 +238,16 @@ body {
   margin-top: 16px;
 }
 
-.vsl-headline {
+h1.vsl-headline {
+  font-family: var(--font-poppins);
   font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.vsl-headline .highlight {
+  color: var(--highlight);
+  font-weight: 800;
 }
 
 .vsl-subheadline {
@@ -247,6 +257,10 @@ body {
 .video-card {
   padding: 0;
   overflow: hidden;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 1.25rem;
 }
 
 .video-wrapper {
@@ -304,8 +318,15 @@ body {
     font-size: 2.1rem;
   }
 
-  .vsl-headline {
-    font-size: 1.7rem;
+  h1.vsl-headline {
+    font-size: 1.65rem;
+    line-height: 1.15;
+  }
+
+  .video-card {
+    margin-left: -24px;
+    margin-right: -24px;
+    border-radius: 0;
   }
 
   .card {
