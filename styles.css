@@ -256,6 +256,8 @@ h1.vsl-headline {
 }
 
 .vsl-subheadline {
+  font-family: var(--font-poppins);
+  color: #000;
   max-width: 540px;
 }
 
