@@ -211,6 +211,25 @@ body {
   font-size: 0.95rem;
 }
 
+.doctor-focus-list {
+  width: 100%;
+  max-width: 380px;
+  gap: 12px;
+  margin: 0 0 24px;
+  text-align: left;
+}
+
+.doctor-focus-list .list-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.doctor-focus-list .list-title {
+  font-weight: 500;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
 .footnote {
   margin: 20px 0 0;
   font-style: italic;
