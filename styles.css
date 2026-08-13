@@ -367,6 +367,7 @@ h1.vsl-headline {
   line-height: 1.3;
   color: var(--foreground);
   margin: 0 0 4px;
+  text-align: center;
 }
 
 .about-clinic-dark {
