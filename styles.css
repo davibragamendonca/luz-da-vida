@@ -37,7 +37,7 @@ body {
   padding: 64px 24px 40px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .hero {
@@ -443,10 +443,24 @@ h1.vsl-headline {
 
 .section-plain {
   padding: 0 4px;
+  margin-top: 16px;
+  text-align: center;
 }
 
 .section-plain .section-title {
+  justify-content: center;
   margin: 0 0 8px;
+}
+
+.section-plain .section-intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-plain .steps-flow,
+.section-plain .block-grid {
+  text-align: left;
+  margin-top: 28px;
 }
 
 .steps-flow {
