@@ -441,11 +441,11 @@ h1.vsl-headline {
   margin: -8px 0 20px;
 }
 
-.steps-section {
+.section-plain {
   padding: 0 4px;
 }
 
-.steps-section .section-title {
+.section-plain .section-title {
   margin: 0 0 8px;
 }
 
@@ -491,6 +491,52 @@ h1.vsl-headline {
   color: var(--brand-icon);
 }
 
+.block-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.block-card {
+  background: var(--gradient-card);
+  border: 1px solid #ffffff80;
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow-card);
+  padding: 24px;
+}
+
+.block-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.75rem;
+  background: #e9f1e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.block-icon .icon {
+  color: var(--brand-icon);
+  width: 20px;
+  height: 20px;
+}
+
+.block-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 2px 0 8px;
+  color: var(--foreground);
+}
+
+.block-desc {
+  color: var(--muted-foreground);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .list-tag {
   display: block;
   text-transform: uppercase;
@@ -531,5 +577,14 @@ h1.vsl-headline {
 
   .specialists-heading {
     font-size: 1.4rem;
+  }
+
+  .block-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .block-card {
+    padding: 20px;
   }
 }
