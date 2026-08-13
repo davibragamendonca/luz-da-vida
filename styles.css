@@ -441,39 +441,43 @@ h1.vsl-headline {
   margin: -8px 0 20px;
 }
 
+.steps-section {
+  padding: 0 4px;
+}
+
+.steps-section .section-title {
+  margin: 0 0 8px;
+}
+
 .steps-flow {
   display: flex;
   flex-direction: column;
 }
 
-.step-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
+.step-card {
+  background: var(--gradient-card);
+  border: 1px solid #ffffff80;
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow-card);
+  padding: 22px 24px;
 }
 
-.step-badge {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--gradient-btn);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.step-card .step-num {
+  display: block;
   font-family: var(--font-serif);
+  font-style: italic;
   font-weight: 700;
-  font-size: 0.95rem;
-  box-shadow: var(--shadow-soft);
+  color: #c98a3e;
+  font-size: 1.5rem;
+  margin: 0 0 8px;
 }
 
-.step-row h4 {
-  margin: 0 0 6px;
+.step-card h4 {
+  margin: 0 0 8px;
   font-size: 1.05rem;
 }
 
-.step-row p {
+.step-card p {
   margin: 0;
   color: var(--muted-foreground);
   font-size: 0.9rem;
@@ -482,8 +486,8 @@ h1.vsl-headline {
 
 .step-arrow {
   display: flex;
-  padding-left: 12px;
-  margin: 2px 0;
+  justify-content: center;
+  margin: 6px 0;
   color: var(--brand-icon);
 }
 
