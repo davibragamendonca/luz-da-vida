@@ -441,31 +441,50 @@ h1.vsl-headline {
   margin: -8px 0 20px;
 }
 
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
+.steps-flow {
+  display: flex;
+  flex-direction: column;
 }
 
-.step-num {
+.step-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.step-badge {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gradient-btn);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 600;
-  color: #c98a3e;
-  font-size: 1.4rem;
-  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: var(--shadow-soft);
 }
 
-.step-item h4 {
-  margin: 0 0 8px;
+.step-row h4 {
+  margin: 0 0 6px;
   font-size: 1.05rem;
 }
 
-.step-item p {
+.step-row p {
   margin: 0;
   color: var(--muted-foreground);
   font-size: 0.9rem;
   line-height: 1.55;
+}
+
+.step-arrow {
+  display: flex;
+  padding-left: 12px;
+  margin: 2px 0;
+  color: var(--brand-icon);
 }
 
 .list-tag {
