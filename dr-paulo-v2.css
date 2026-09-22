@@ -108,6 +108,7 @@ body {
   color: var(--dp2-ivory);
 }
 
+.dp2-col-copy p.dp2-on-dark-text,
 .dp2-on-dark-text {
   color: var(--dp2-ivory);
   line-height: 1.8;
