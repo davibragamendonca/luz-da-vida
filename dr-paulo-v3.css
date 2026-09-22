@@ -207,7 +207,7 @@ body {
   font-family: var(--dp3-font-display);
   font-weight: 500;
   font-size: clamp(2.2rem, 4vw, 3.4rem);
-  line-height: 1.3;
+  line-height: 1.05;
   letter-spacing: -0.01em;
   color: var(--dp3-ivory);
   margin: 0 0 14px;
