@@ -189,6 +189,12 @@ body {
   width: 100%;
 }
 
+@media (min-width: 901px) {
+  .dp3-hero .dp3-wrap {
+    padding-left: clamp(24px, 6vw, 100px);
+  }
+}
+
 .dp3-hero-copy {
   max-width: 640px;
 }
