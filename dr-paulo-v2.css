@@ -700,6 +700,7 @@ body {
 
   .dp2-hero-copy {
     max-width: none;
+    text-align: center;
   }
 
   .dp2-hero .dp2-eyebrow {
@@ -717,6 +718,7 @@ body {
   }
 
   .dp2-hero-sub {
+    max-width: none;
     margin: 0 0 16px;
   }
 

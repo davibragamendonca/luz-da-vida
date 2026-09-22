@@ -223,6 +223,10 @@ body {
   margin: 0 0 8px;
 }
 
+.dp3-hero-photo {
+  display: none;
+}
+
 /* 2. Riscos ambientais (stats) */
 .dp3-stats {
   position: relative;
@@ -667,15 +671,23 @@ body {
     text-align: center;
   }
 
-  /* Hero: overlay mais forte embaixo, texto ancorado na base da foto */
-  .dp3-hero {
-    min-height: 580px;
-    align-items: flex-end;
-    padding: 40px 0 48px;
+  /* Hero: foto recortada no topo, texto em bloco normal abaixo */
+  .dp3-hero.dp3-section {
+    min-height: 0;
+    display: block;
+    padding: 0 0 44px;
     background-image:
-      linear-gradient(180deg, rgba(11, 12, 14, 0.3) 0%, rgba(11, 12, 14, 0.82) 55%, rgba(11, 12, 14, 0.96) 100%),
-      url("images/dr-paulo/dr-paulo-hero-bg.png");
-    background-position: 70% center;
+      radial-gradient(ellipse 700px 420px at 85% 0%, var(--dp3-champagne-veil), transparent 65%),
+      linear-gradient(160deg, var(--dp3-graphite) 0%, var(--dp3-graphite-deep) 100%);
+    background-position: initial;
+    background-size: auto;
+  }
+
+  .dp3-hero-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 2px;
   }
 
   .dp3-hero-copy {
