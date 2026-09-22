@@ -152,8 +152,8 @@ body {
   background-repeat: no-repeat;
   min-height: 640px;
   display: flex;
-  align-items: center;
-  padding: 72px 0;
+  align-items: flex-start;
+  padding: 130px 0 72px;
   color: var(--dp2-warm-grey);
 }
 
