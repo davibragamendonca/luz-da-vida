@@ -157,6 +157,11 @@ body {
   color: var(--dp2-warm-grey);
 }
 
+.dp2-hero .dp2-wrap {
+  margin: 0;
+  width: 100%;
+}
+
 .dp2-hero-copy {
   max-width: 600px;
 }

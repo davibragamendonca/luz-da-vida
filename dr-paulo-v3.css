@@ -184,6 +184,11 @@ body {
   color: var(--dp3-warm-grey);
 }
 
+.dp3-hero .dp3-wrap {
+  margin: 0;
+  width: 100%;
+}
+
 .dp3-hero-copy {
   max-width: 640px;
 }
