@@ -200,9 +200,12 @@ body {
 .dp2-hero-photo img {
   position: relative;
   width: 100%;
-  height: auto;
+  max-height: 640px;
+  object-fit: cover;
+  object-position: center 15%;
   display: block;
   z-index: 1;
+  border: 1px solid var(--dp2-champagne-dim);
 }
 
 /* 2. Situation list (editorial, no boxes) */
