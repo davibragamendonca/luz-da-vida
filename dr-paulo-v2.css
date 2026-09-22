@@ -696,7 +696,7 @@ body {
   }
 
   /* Hero: foto recortada no topo, texto em bloco normal abaixo */
-  .dp2-hero {
+  .dp2-hero.dp2-section {
     min-height: 0;
     display: block;
     padding: 0 0 44px;
