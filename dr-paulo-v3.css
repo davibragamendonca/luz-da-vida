@@ -21,8 +21,13 @@
   --dp3-font-body: "Manrope", -apple-system, "Segoe UI", sans-serif;
 }
 
+html,
 body {
   margin: 0;
+  overflow-x: hidden;
+}
+
+body {
   background: var(--dp3-ivory);
 }
 
