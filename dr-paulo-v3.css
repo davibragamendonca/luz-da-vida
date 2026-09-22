@@ -78,21 +78,20 @@ body {
   font-size: 0.72rem;
   color: #8a7550;
   margin: 0 0 20px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
 }
 
 .dp3-eyebrow.dp3-center {
-  justify-content: center;
+  text-align: center;
 }
 
 .dp3-eyebrow::before {
   content: "";
   width: 30px;
   height: 1px;
+  margin-right: 14px;
   background: var(--dp3-champagne);
   display: inline-block;
+  vertical-align: middle;
 }
 
 .dp3-dark .dp3-eyebrow {
@@ -187,6 +186,10 @@ body {
 
 .dp3-hero-copy {
   max-width: 640px;
+}
+
+.dp3-hero-copy .dp3-eyebrow {
+  max-width: 400px;
 }
 
 .dp3-hero-copy h1 {
@@ -682,6 +685,10 @@ body {
     max-width: none;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .dp3-hero-copy .dp3-eyebrow {
+    max-width: none;
   }
 
   .dp3-hero-sub {

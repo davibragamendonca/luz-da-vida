@@ -71,21 +71,20 @@ body {
   font-size: 0.72rem;
   color: #8a7550;
   margin: 0 0 18px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
 }
 
 .dp2-eyebrow.dp2-center {
-  justify-content: center;
+  text-align: center;
 }
 
 .dp2-eyebrow::before {
   content: "";
   width: 30px;
   height: 1px;
+  margin-right: 14px;
   background: var(--dp2-champagne);
   display: inline-block;
+  vertical-align: middle;
 }
 
 .dp2-dark .dp2-eyebrow {
@@ -162,6 +161,10 @@ body {
   max-width: 600px;
 }
 
+.dp2-hero-copy .dp2-eyebrow {
+  max-width: 400px;
+}
+
 .dp2-hero-copy h1 {
   font-family: var(--dp2-font-display);
   font-weight: 500;
@@ -170,6 +173,7 @@ body {
   letter-spacing: -0.005em;
   color: var(--dp2-ivory);
   margin: 0 0 26px;
+  max-width: 480px;
   text-wrap: balance;
 }
 
@@ -698,6 +702,11 @@ body {
   .dp2-hero-copy h1 {
     font-size: 1.7rem;
     margin: 0 0 12px;
+    max-width: none;
+  }
+
+  .dp2-hero-copy .dp2-eyebrow {
+    max-width: none;
   }
 
   .dp2-hero-sub {
