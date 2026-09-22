@@ -238,7 +238,6 @@ body {
   object-fit: cover;
   object-position: center 15%;
   display: block;
-  border: 1px solid var(--dp3-champagne-dim);
   box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.65);
 }
 
@@ -420,21 +419,12 @@ body {
   aspect-ratio: 1;
 }
 
-.dp3-medallion-lg::before {
-  content: "";
-  position: absolute;
-  inset: -16px;
-  border-radius: 50%;
-  border: 1px solid var(--dp3-champagne-dim);
-}
-
 .dp3-medallion-lg img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  border: 1.5px solid var(--dp3-champagne);
 }
 
 .dp3-col-copy p {
