@@ -33,20 +33,6 @@ body {
   box-sizing: border-box;
 }
 
-.dp2-compare-note {
-  text-align: center;
-  font-size: 0.78rem;
-  color: var(--dp2-warm-grey-dim);
-  background: var(--dp2-graphite);
-  margin: 0;
-  padding: 10px 16px;
-  letter-spacing: 0.01em;
-}
-
-.dp2-compare-note a {
-  color: var(--dp2-champagne-soft);
-}
-
 .dp2-wrap {
   max-width: 1100px;
   margin: 0 auto;
@@ -123,7 +109,7 @@ body {
 }
 
 .dp2-on-dark-text {
-  color: var(--dp2-warm-grey);
+  color: var(--dp2-ivory);
   line-height: 1.8;
   margin: 0 0 18px;
   font-size: 1.02rem;
@@ -287,6 +273,11 @@ body {
   position: relative;
   width: min(280px, 70vw);
   aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+.dp2-col-img-circle .dp2-medallion-lg {
+  width: min(360px, 70vw);
 }
 
 .dp2-medallion-lg img {
