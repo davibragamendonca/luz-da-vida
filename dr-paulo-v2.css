@@ -148,12 +148,12 @@ body {
     linear-gradient(100deg, rgba(11, 12, 14, 0.94) 0%, rgba(11, 12, 14, 0.8) 32%, rgba(11, 12, 14, 0.38) 60%, rgba(11, 12, 14, 0.1) 88%),
     url("images/dr-paulo/dr-paulo-hero-bg.png");
   background-size: cover;
-  background-position: 68% 28%;
+  background-position: 68% 15%;
   background-repeat: no-repeat;
-  min-height: 640px;
+  min-height: 600px;
   display: flex;
   align-items: flex-start;
-  padding: 130px 0 72px;
+  padding: 96px 0 56px;
   color: var(--dp2-warm-grey);
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 .dp2-hero-copy {
-  max-width: 600px;
+  max-width: 620px;
 }
 
 .dp2-hero-copy .dp2-eyebrow {
@@ -179,12 +179,12 @@ body {
 .dp2-hero-copy h1 {
   font-family: var(--dp2-font-display);
   font-weight: 500;
-  font-size: clamp(2rem, 3.6vw, 2.9rem);
-  line-height: 1.22;
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  line-height: 1.24;
   letter-spacing: -0.005em;
   color: var(--dp2-ivory);
-  margin: 0 0 26px;
-  max-width: 480px;
+  margin: 0 0 20px;
+  max-width: 600px;
   text-wrap: balance;
 }
 
@@ -193,7 +193,7 @@ body {
   font-size: 1.02rem;
   line-height: 1.75;
   max-width: 46ch;
-  margin: 0 0 30px;
+  margin: 0 0 24px;
 }
 
 /* 2. Riscos ambientais (stats) */
