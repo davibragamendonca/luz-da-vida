@@ -562,6 +562,21 @@ body {
   display: block;
 }
 
+.dp3-medallion-lg {
+  position: relative;
+  width: min(200px, 60vw);
+  aspect-ratio: 1;
+  margin: 0 auto 22px;
+}
+
+.dp3-medallion-lg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
 .dp3-format-item h3 {
   font-family: var(--dp3-font-display);
   font-weight: 500;
