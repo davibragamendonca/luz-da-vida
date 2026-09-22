@@ -150,10 +150,10 @@ body {
   background-size: cover;
   background-position: 68% 15%;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 780px;
   display: flex;
   align-items: flex-start;
-  padding: 96px 0 56px;
+  padding: 96px 0 64px;
   color: var(--dp2-warm-grey);
 }
 
