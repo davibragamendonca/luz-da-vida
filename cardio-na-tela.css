@@ -1,5 +1,5 @@
-/* Cardio na Tela — Teleconsulta SulAmérica com o Dr. Paulo Cardoso */
-/* Identidade própria, separada da Luz da Vida: tom "saúde digital" claro, */
+/* Cardio na Tela — Teleconsulta SulAmérica */
+/* Identidade própria, separada da Luz da Vida e de qualquer médico específico: tom "saúde digital" claro, */
 /* rápido e objetivo — não a estética premium grafite/champagne da consulta particular. */
 
 :root {
@@ -89,13 +89,40 @@ a {
   gap: 12px;
 }
 
-.ctl-brand {
-  font-weight: 800;
+.ctl-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ctl-logo-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: var(--ctl-teal-dark);
+  color: var(--ctl-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctl-logo-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ctl-logo-text {
+  font-weight: 600;
   font-size: 1rem;
   color: var(--ctl-navy);
   display: flex;
   flex-direction: column;
   line-height: 1.25;
+}
+
+.ctl-logo-text strong {
+  font-weight: 800;
 }
 
 .ctl-brand-sub {
@@ -276,6 +303,12 @@ a {
   margin: 0 0 18px;
 }
 
+.ctl-chip-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
 .ctl-hero h1 {
   font-size: 2rem;
   font-weight: 800;
@@ -425,16 +458,21 @@ a {
   align-items: center;
 }
 
-.ctl-sobre-photo {
-  width: min(180px, 50vw);
+.ctl-sobre-icon {
+  width: 96px;
+  height: 96px;
   flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--ctl-teal-soft);
+  color: var(--ctl-teal-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ctl-sobre-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
+.ctl-sobre-icon svg {
+  width: 44px;
+  height: 44px;
 }
 
 .ctl-sobre-copy {
@@ -465,12 +503,6 @@ a {
   font-weight: 700;
   padding: 7px 14px;
   border-radius: 999px;
-}
-
-.ctl-crm-line {
-  margin: 18px 0 0;
-  font-size: 0.82rem;
-  color: var(--ctl-grey-soft);
 }
 
 /* ---- Agendar ---- */
