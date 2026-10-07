@@ -303,10 +303,14 @@ a {
   margin: 0 0 18px;
 }
 
-.ctl-chip-icon {
-  width: 16px;
+.ctl-chip-logo {
   height: 16px;
+  width: auto;
   flex-shrink: 0;
+  background: var(--ctl-white);
+  border-radius: 3px;
+  padding: 2px 4px;
+  display: block;
 }
 
 .ctl-hero h1 {
@@ -507,6 +511,22 @@ a {
 
 /* ---- Agendar ---- */
 
+.ctl-insurance-badge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--ctl-white);
+  border-radius: var(--ctl-radius-sm);
+  padding: 10px 18px;
+  margin: 22px 0 0;
+  box-shadow: var(--ctl-shadow);
+}
+
+.ctl-insurance-badge img {
+  display: block;
+  height: 26px;
+  width: auto;
+}
+
 .ctl-agendar-callout {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -624,6 +644,20 @@ a {
   color: var(--ctl-teal-dark);
   font-weight: 700;
   text-decoration: none;
+}
+
+.ctl-footer-partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.ctl-footer-partner img {
+  height: 26px;
+  width: auto;
+  display: block;
 }
 
 /* ---- Sticky mobile CTA ---- */
