@@ -40,7 +40,7 @@ src="https://www.facebook.com/tr?id=27556097847387788&ev=PageView&noscript=1"
     </span>
     <h2>Dr. Paulo Cardoso</h2>
     <p class="bio">Cuidado cardiológico integrativo, unindo ciência atualizada e escuta atenta para a saúde do seu coração.</p>
-    <a class="btn" href="https://wa.link/zazbd5" target="_blank" rel="noopener noreferrer">
+    <a class="btn" href="https://wa.link/zazbd5" target="_blank" rel="noopener noreferrer" data-whatsapp-cta>
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
       Agendar consulta
     </a>
@@ -61,5 +61,14 @@ src="https://www.facebook.com/tr?id=27556097847387788&ev=PageView&noscript=1"
   </footer>
 </main>
 
+<script>
+  document.querySelectorAll('[data-whatsapp-cta]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Contact');
+      }
+    });
+  });
+</script>
 </body>
 </html>
