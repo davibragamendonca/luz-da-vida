@@ -199,7 +199,14 @@ p, li { text-wrap: pretty; }
   .gp-btn { font-size: 18px; }
   .gp-btn-lg { font-size: 20px; }
   .gp-tag { font-size: 11px; }
-  .gp-h1 { font-size: 33px; }
+  /* Topo no celular: capa, título e botão na primeira tela */
+  .gp-hero { padding: 20px 0 40px; }
+  .gp-hero-grid { gap: 18px; }
+  .gp-hero-mock img { max-width: 138px; transform: rotate(2deg); box-shadow: 0 16px 32px rgba(0,0,0,.45), 0 0 0 1px rgba(201,167,108,.4); }
+  .gp-h1 { font-size: 26px; line-height: 1.15; margin-bottom: 10px; }
+  .gp-hero .gp-lead { font-size: 15px; line-height: 1.5; margin-bottom: 16px; }
+  .gp-hero .gp-btn { margin-top: 0; }
+  .gp-hero .gp-micro { margin-top: 8px; }
   .gp-lead, .gp-scene p, .gp-truth > p { font-size: 17px; }
   .gp-thoughts { grid-template-columns: 1fr; }
   .gp-bonus { grid-template-columns: 84px 1fr; gap: 16px; padding: 16px; }
@@ -208,4 +215,9 @@ p, li { text-wrap: pretty; }
   .gp-price { font-size: 72px; }
   .gp-guarantee { flex-direction: column; text-align: center; gap: 24px; }
   .gp-scene .gp-scene-hit { font-size: 21px; }
+}
+
+/* Celulares mais altos: capa um pouco maior, botão continua na primeira tela */
+@media (max-width: 480px) and (min-height: 640px) {
+  .gp-hero-mock img { max-width: 165px; }
 }
