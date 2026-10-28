@@ -9,8 +9,8 @@
   --gp-ink: #24161b;
   --gp-ink-soft: #5b4a4f;
   --gp-line: rgba(82, 28, 46, .12);
-  --gp-display: 'Playfair Display', Georgia, serif;
-  --gp-body: 'Manrope', system-ui, sans-serif;
+  --gp-display: 'Poppins', system-ui, sans-serif;
+  --gp-body: 'Poppins', system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -184,6 +184,7 @@ a { color: inherit; }
   .gp-btn { display: block; width: 100%; text-align: center; padding: 18px 20px; }
   .gp-btn-lg { font-size: 18px; }
   .gp-tag { font-size: 11px; }
+  .gp-h1 { font-size: 30px; }
   .gp-lead, .gp-scene p, .gp-truth > p { font-size: 17px; }
   .gp-thoughts { grid-template-columns: 1fr; }
   .gp-bonus { grid-template-columns: 84px 1fr; gap: 16px; padding: 16px; }
