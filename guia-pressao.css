@@ -1,0 +1,195 @@
+/* Guia da Pressão Além dos Remédios — paleta da capa do guia (vinho + dourado + marfim) */
+:root {
+  --gp-wine: #521c2e;
+  --gp-wine-deep: #35101d;
+  --gp-gold: #c9a76c;
+  --gp-gold-soft: #ead9b6;
+  --gp-ivory: #f8f3ec;
+  --gp-white: #fffdfa;
+  --gp-ink: #24161b;
+  --gp-ink-soft: #5b4a4f;
+  --gp-line: rgba(82, 28, 46, .12);
+  --gp-display: 'Playfair Display', Georgia, serif;
+  --gp-body: 'Manrope', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--gp-body); color: var(--gp-ink); background: var(--gp-white); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+
+.gp-wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.gp-narrow { max-width: 760px; }
+.gp-center { text-align: center; }
+.gp-section { padding: 96px 0; }
+.gp-light { background: var(--gp-white); }
+.gp-ivory { background: var(--gp-ivory); }
+.gp-wine { background: radial-gradient(ellipse at top, #6a2840 0%, var(--gp-wine) 45%, var(--gp-wine-deep) 100%); color: var(--gp-ivory); }
+
+/* Tipografia */
+.gp-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gp-gold); margin-bottom: 14px; }
+.gp-light .gp-eyebrow, .gp-ivory .gp-eyebrow { color: #a3803f; }
+.gp-h1 { font-family: var(--gp-display); font-weight: 700; font-size: clamp(34px, 5vw, 56px); line-height: 1.12; color: var(--gp-white); margin-bottom: 20px; }
+.gp-h1 em, .gp-h2 em { font-style: italic; color: var(--gp-gold); }
+.gp-light .gp-h2 em, .gp-ivory .gp-h2 em { color: #9b7636; }
+.gp-h2 { font-family: var(--gp-display); font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.15; color: var(--gp-wine); margin-bottom: 28px; }
+.gp-on-dark { color: var(--gp-white); }
+.gp-lead { font-size: 19px; color: rgba(248, 243, 236, .86); margin-bottom: 30px; max-width: 34em; }
+.gp-lead strong { color: var(--gp-gold-soft); }
+.gp-micro { font-size: 13px; opacity: .72; margin-top: 12px; }
+
+/* Botão */
+.gp-btn { display: inline-block; text-decoration: none; font-weight: 800; font-size: 17px; letter-spacing: .02em; color: var(--gp-wine-deep); background: linear-gradient(180deg, #e2c58e 0%, var(--gp-gold) 100%); padding: 18px 40px; border-radius: 999px; box-shadow: 0 10px 28px rgba(201, 167, 108, .35), inset 0 1px 0 rgba(255,255,255,.5); transition: transform .2s, box-shadow .2s; margin-top: 8px; }
+.gp-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(201, 167, 108, .5); }
+.gp-btn-lg { font-size: 19px; padding: 22px 48px; }
+.gp-section .gp-center .gp-btn { margin-top: 40px; }
+
+/* 1. Topo */
+.gp-hero { background: radial-gradient(ellipse at 80% 20%, #6e2a43 0%, var(--gp-wine) 40%, var(--gp-wine-deep) 100%); color: var(--gp-ivory); padding: 72px 0 88px; overflow: hidden; }
+.gp-hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
+.gp-tag { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gp-gold-soft); border: 1px solid rgba(201, 167, 108, .45); border-radius: 999px; padding: 7px 16px; margin-bottom: 24px; }
+.gp-hero-mock img { width: 100%; max-width: 400px; margin: 0 auto; border-radius: 6px; transform: rotate(2.5deg); box-shadow: 0 30px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(201,167,108,.4); }
+
+/* 2. Cena */
+.gp-scene p { font-size: 19px; color: var(--gp-ink-soft); margin-bottom: 16px; }
+.gp-scene .gp-scene-hit { font-family: var(--gp-display); font-style: italic; font-size: 24px; line-height: 1.35; color: var(--gp-wine); border-left: 3px solid var(--gp-gold); padding-left: 20px; margin-top: 28px; }
+
+/* 3. Diálogo interno */
+.gp-thoughts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 860px; margin: 18px auto 0; }
+.gp-thoughts p { background: rgba(255, 253, 250, .06); border: 1px solid rgba(201, 167, 108, .25); border-radius: 18px 18px 18px 4px; padding: 16px 20px; font-size: 17px; font-style: italic; color: var(--gp-ivory); }
+.gp-thoughts-close { text-align: center; font-family: var(--gp-display); font-size: 24px; color: var(--gp-gold-soft); margin-top: 40px; }
+
+/* 4. Passos */
+.gp-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.gp-step { background: var(--gp-ivory); border: 1px solid var(--gp-line); border-radius: 20px; padding: 32px 28px; }
+.gp-step-n { display: inline-grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--gp-wine); color: var(--gp-gold); font-family: var(--gp-display); font-style: italic; font-size: 26px; margin-bottom: 18px; }
+.gp-step h3 { font-size: 21px; color: var(--gp-wine); margin-bottom: 10px; }
+.gp-step p { color: var(--gp-ink-soft); font-size: 16px; }
+
+/* 5. Dentro do guia */
+.gp-inside { display: grid; grid-template-columns: .8fr 1.2fr; gap: 48px; align-items: center; }
+.gp-page img { width: 100%; border-radius: 10px; box-shadow: 0 24px 50px rgba(53, 16, 29, .18); transform: rotate(-2deg); max-width: 380px; margin: 0 auto; }
+.gp-bullets { list-style: none; display: grid; gap: 16px; }
+.gp-bullets li { position: relative; padding-left: 34px; color: var(--gp-ink-soft); }
+.gp-bullets li::before { content: ''; position: absolute; left: 0; top: 5px; width: 20px; height: 20px; border-radius: 50%; background: var(--gp-wine) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='%23c9a76c' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100% no-repeat; }
+.gp-bullets strong { color: var(--gp-ink); }
+
+/* 6. Bônus */
+.gp-bonus-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.gp-bonus { display: grid; grid-template-columns: 110px 1fr; gap: 20px; align-items: center; background: rgba(255, 253, 250, .06); border: 1px solid rgba(201, 167, 108, .3); border-radius: 20px; padding: 20px; }
+.gp-bonus img { width: 100%; border-radius: 6px; box-shadow: 0 10px 24px rgba(0,0,0,.35); }
+.gp-bonus-tag { display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--gp-wine-deep); background: var(--gp-gold); border-radius: 999px; padding: 3px 12px; margin-bottom: 8px; }
+.gp-bonus h3 { font-size: 19px; color: var(--gp-white); margin-bottom: 6px; line-height: 1.3; }
+.gp-bonus p { font-size: 15px; color: rgba(248, 243, 236, .78); }
+
+/* 7. Para quem é */
+.gp-fit { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.gp-fit-card { border-radius: 20px; padding: 32px 28px; }
+.gp-fit-card h3 { font-size: 20px; margin-bottom: 16px; }
+.gp-fit-card ul { list-style: none; display: grid; gap: 12px; }
+.gp-fit-card li { position: relative; padding-left: 30px; font-size: 16px; }
+.gp-fit-yes { background: var(--gp-ivory); border: 1px solid var(--gp-line); }
+.gp-fit-yes h3 { color: var(--gp-wine); }
+.gp-fit-yes li::before { content: '✓'; position: absolute; left: 0; font-weight: 800; color: #3d7a4f; }
+.gp-fit-no { background: #f3eeee; border: 1px solid var(--gp-line); }
+.gp-fit-no h3 { color: var(--gp-ink-soft); }
+.gp-fit-no li { color: var(--gp-ink-soft); }
+.gp-fit-no li::before { content: '✕'; position: absolute; left: 0; font-weight: 800; color: #a33a3a; }
+
+/* 8. Oferta */
+.gp-offer { background: var(--gp-white); color: var(--gp-ink); border-radius: 28px; padding: 44px 36px; text-align: center; box-shadow: 0 30px 70px rgba(0,0,0,.35); border: 2px solid var(--gp-gold); }
+.gp-offer-cover { width: 170px; margin: 0 auto 28px; border-radius: 6px; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+.gp-stack { list-style: none; text-align: left; border-top: 1px solid var(--gp-line); margin-bottom: 24px; }
+.gp-stack li { display: flex; justify-content: space-between; gap: 12px; padding: 14px 0 14px 32px; border-bottom: 1px solid var(--gp-line); font-weight: 600; position: relative; }
+.gp-stack li::before { content: '✓'; position: absolute; left: 4px; color: #3d7a4f; font-weight: 800; }
+.gp-stack li span { font-weight: 500; color: var(--gp-ink-soft); font-size: 14px; white-space: nowrap; }
+.gp-anchor { color: var(--gp-ink-soft); font-size: 16px; margin-bottom: 18px; }
+.gp-price-label { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: #9b7636; }
+.gp-price { font-family: var(--gp-display); font-weight: 700; font-size: 84px; line-height: 1; color: var(--gp-wine); }
+.gp-price small { font-size: 32px; vertical-align: top; margin-right: 4px; position: relative; top: 12px; }
+.gp-price-sub { color: var(--gp-ink-soft); margin: 6px 0 18px; }
+
+
+/* 9. Como recebe */
+.gp-receive { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.gp-receive div { display: flex; align-items: center; gap: 16px; background: var(--gp-ivory); border-radius: 18px; padding: 22px; }
+.gp-receive span { flex: 0 0 auto; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--gp-gold); color: var(--gp-wine); font-family: var(--gp-display); font-style: italic; font-size: 21px; }
+.gp-receive p { font-size: 16px; color: var(--gp-ink-soft); }
+
+/* 10. Garantia */
+.gp-guarantee { display: flex; align-items: center; gap: 36px; }
+.gp-guarantee p { color: var(--gp-ink-soft); font-size: 18px; }
+.gp-guarantee .gp-h2 { margin-bottom: 12px; }
+.gp-seal { flex: 0 0 auto; width: 136px; height: 136px; border-radius: 50%; display: grid; place-content: center; text-align: center; background: var(--gp-wine); color: var(--gp-gold); border: 4px double var(--gp-gold); box-shadow: 0 14px 30px rgba(53,16,29,.25); }
+.gp-seal strong { font-family: var(--gp-display); font-size: 54px; line-height: 1; }
+.gp-seal span { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+
+/* 11. Verdade */
+.gp-truth > p { font-size: 19px; color: rgba(248, 243, 236, .86); text-align: center; margin-bottom: 14px; }
+
+/* 12. Autoridade */
+.gp-author { display: grid; grid-template-columns: 340px 1fr; gap: 52px; align-items: center; margin-bottom: 72px; }
+.gp-author-photo { width: 100%; border-radius: 24px; background: var(--gp-ivory); box-shadow: 0 24px 50px rgba(53,16,29,.15); }
+.gp-author p { color: var(--gp-ink-soft); margin-bottom: 14px; }
+.gp-author .gp-h2 { margin-bottom: 18px; }
+.gp-credential { font-size: 14px; font-weight: 700; letter-spacing: .06em; color: var(--gp-wine) !important; }
+.gp-reviews-head { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; margin-bottom: 28px; color: var(--gp-ink-soft); font-weight: 600; }
+.gp-score { font-family: var(--gp-display); font-size: 40px; font-weight: 700; color: var(--gp-wine); }
+.gp-stars { color: #e0a93b; font-size: 22px; letter-spacing: 2px; }
+.gp-reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.gp-reviews blockquote { background: var(--gp-ivory); border-radius: 20px; padding: 26px; border: 1px solid var(--gp-line); }
+.gp-reviews p { font-style: italic; color: var(--gp-ink); margin-bottom: 14px; }
+.gp-reviews cite { font-style: normal; font-size: 14px; font-weight: 700; color: var(--gp-wine); }
+.gp-reviews-note { text-align: center; font-size: 13px; color: var(--gp-ink-soft); margin-top: 16px; }
+
+/* 13. FAQ */
+.gp-faq { display: grid; gap: 12px; }
+.gp-faq details { background: var(--gp-white); border: 1px solid var(--gp-line); border-radius: 16px; padding: 0 24px; }
+.gp-faq summary { cursor: pointer; list-style: none; font-weight: 700; color: var(--gp-wine); padding: 20px 32px 20px 0; position: relative; }
+.gp-faq summary::-webkit-details-marker { display: none; }
+.gp-faq summary::after { content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 26px; font-weight: 400; color: var(--gp-gold); transition: transform .2s; }
+.gp-faq details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.gp-faq details p { color: var(--gp-ink-soft); padding-bottom: 20px; font-size: 16px; }
+.gp-faq a { color: var(--gp-wine); font-weight: 700; }
+
+/* 14. Rodapé */
+.gp-footer { background: var(--gp-wine-deep); color: rgba(248, 243, 236, .72); padding: 56px 0 40px; text-align: center; font-size: 14px; }
+.gp-footer-logo { width: 150px; margin: 0 auto 28px; }
+.gp-disclaimer { max-width: 720px; margin: 0 auto 22px; padding: 18px 22px; border: 1px solid rgba(201,167,108,.3); border-radius: 14px; }
+.gp-disclaimer strong { color: var(--gp-gold-soft); }
+.gp-footer-info { margin-bottom: 16px; }
+.gp-footer-info a { color: var(--gp-gold-soft); }
+.gp-footer-copy { font-size: 12px; opacity: .7; }
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .gp-section { padding: 64px 0; }
+  .gp-hero { padding: 40px 0 64px; }
+  .gp-hero-grid { grid-template-columns: 1fr; gap: 36px; text-align: center; }
+  .gp-hero-copy { order: 2; }
+  .gp-hero-mock { order: 1; }
+  .gp-hero-mock img { max-width: 230px; }
+  .gp-lead { margin-left: auto; margin-right: auto; }
+  .gp-steps, .gp-receive, .gp-reviews, .gp-fit, .gp-bonus-grid { grid-template-columns: 1fr; }
+  .gp-inside { grid-template-columns: 1fr; gap: 36px; }
+  .gp-page img { max-width: 240px; }
+  .gp-author { grid-template-columns: 1fr; gap: 28px; text-align: center; margin-bottom: 52px; }
+  .gp-author-photo { max-width: 260px; margin: 0 auto; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .gp-wrap { padding: 0 18px; }
+  .gp-btn { display: block; width: 100%; text-align: center; padding: 18px 20px; }
+  .gp-btn-lg { font-size: 18px; }
+  .gp-tag { font-size: 11px; }
+  .gp-lead, .gp-scene p, .gp-truth > p { font-size: 17px; }
+  .gp-thoughts { grid-template-columns: 1fr; }
+  .gp-bonus { grid-template-columns: 84px 1fr; gap: 16px; padding: 16px; }
+  .gp-offer { padding: 36px 20px; }
+  .gp-stack li span { display: none; }
+  .gp-price { font-size: 72px; }
+  .gp-guarantee { flex-direction: column; text-align: center; gap: 24px; }
+  .gp-scene .gp-scene-hit { font-size: 21px; }
+}
