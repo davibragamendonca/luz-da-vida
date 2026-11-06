@@ -128,7 +128,7 @@ p, li { text-wrap: pretty; }
 .gp-price-row { display: flex; align-items: center; justify-content: center; gap: 28px; margin-bottom: 18px; }
 .gp-price-row .gp-offer-cover { width: 140px; margin: 0; }
 .gp-price-row > div { text-align: left; }
-.gp-price-12x { font-size: 44px; font-weight: 800; color: var(--gp-wine); line-height: 1.1; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 6px; white-space: nowrap; }
+.gp-price-12x { font-size: 44px; font-weight: 800; color: #1f6b3f; line-height: 1.1; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 6px; white-space: nowrap; }
 .gp-price-cash { font-size: 18px; color: var(--gp-ink-soft); margin-top: 8px; }
 .gp-price-cash strong { color: var(--gp-ink); }
 .gp-price-once { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: #a8771f; margin-top: 6px; }
