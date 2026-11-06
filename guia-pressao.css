@@ -114,9 +114,26 @@ p, li { text-wrap: pretty; }
 .gp-stack li::before { content: '✓'; position: absolute; left: 4px; color: #3d7a4f; font-weight: 800; }
 .gp-stack-meta { float: right; margin-left: 12px; font-weight: 500; color: var(--gp-ink-soft); font-size: 14px; white-space: nowrap; }
 .gp-anchor { color: var(--gp-ink-soft); font-size: 16px; margin-bottom: 18px; }
-.gp-stack-val { float: right; margin-left: 12px; font-weight: 500; color: #9a8a8f; font-size: 15px; white-space: nowrap; text-decoration: line-through; }
-.gp-price-total { font-size: 17px; color: var(--gp-ink-soft); margin: 22px 0 4px; }
-.gp-price-total s { color: #b3362f; font-weight: 700; }
+/* Oferta empilhada */
+.gp-offer .gp-stack { text-align: center; }
+.gp-offer .gp-stack li { padding: 16px 4px; font-size: 16px; line-height: 1.5; }
+.gp-offer .gp-stack li::before { content: none; }
+.gp-stack s, .gp-total-box s, .gp-offer-bridge strong { color: #c8302a; font-weight: 700; white-space: nowrap; }
+.gp-offer .gp-free { border-radius: 4px; padding: 1px 7px; }
+.gp-offer-title { font-size: 26px; line-height: 1.3; font-weight: 500; color: var(--gp-ink); margin-bottom: 24px; text-wrap: balance; }
+.gp-offer-title strong { font-weight: 800; }
+.gp-offer-green { color: var(--gp-green); font-weight: 800; }
+.gp-total-box { display: inline-block; background: #f1ebe4; border-radius: 8px; padding: 10px 22px; font-weight: 700; margin-bottom: 18px; }
+.gp-offer-bridge { font-size: 18px; color: var(--gp-ink-soft); margin-bottom: 26px; text-wrap: pretty; }
+.gp-price-row { display: flex; align-items: center; justify-content: center; gap: 28px; margin-bottom: 18px; }
+.gp-price-row .gp-offer-cover { width: 140px; margin: 0; }
+.gp-price-row > div { text-align: left; }
+.gp-price-12x { font-size: 44px; font-weight: 800; color: var(--gp-wine); line-height: 1.1; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 6px; white-space: nowrap; }
+.gp-price-cash { font-size: 18px; color: var(--gp-ink-soft); margin-top: 8px; }
+.gp-price-cash strong { color: var(--gp-ink); }
+.gp-price-once { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: #a8771f; margin-top: 6px; }
+.gp-h1 .gp-hl { color: #8fdcaa; }
+.gp-lead .gp-lead-green { color: #8fdcaa; }
 .gp-price-label { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: #a8771f; }
 .gp-price { font-family: var(--gp-display); font-weight: 700; font-size: 84px; line-height: 1; color: var(--gp-wine); }
 .gp-price small { font-size: 32px; vertical-align: top; margin-right: 4px; position: relative; top: 12px; }
@@ -205,7 +222,7 @@ p, li { text-wrap: pretty; }
   /* Topo no celular: capa, título e botão na primeira tela */
   .gp-hero { padding: 32px 0 48px; }
   .gp-hero-grid { gap: 24px; }
-  .gp-hero-mock img { max-width: 150px; transform: rotate(2deg); box-shadow: 0 16px 32px rgba(0,0,0,.45), 0 0 0 1px rgba(217,168,69,.4); }
+  .gp-hero-mock img { max-width: 118px; transform: rotate(2deg); box-shadow: 0 16px 32px rgba(0,0,0,.45), 0 0 0 1px rgba(217,168,69,.4); }
   .gp-h1 { font-size: 26px; line-height: 1.15; margin-bottom: 10px; }
   .gp-hero .gp-lead { font-size: 15px; line-height: 1.5; margin-bottom: 16px; }
   .gp-hero .gp-btn { margin-top: 0; }
@@ -215,6 +232,14 @@ p, li { text-wrap: pretty; }
   .gp-bonus { grid-template-columns: 84px 1fr; gap: 16px; padding: 16px; }
   .gp-offer { padding: 36px 20px; }
   .gp-stack-meta { display: none; }
+  .gp-offer-title { font-size: 21px; }
+  .gp-offer .gp-stack li { font-size: 15px; }
+  .gp-offer-bridge { font-size: 16px; }
+  .gp-price-row { gap: 16px; }
+  .gp-price-row .gp-offer-cover { width: 105px; }
+  .gp-price-12x { font-size: 34px; }
+  .gp-price-cash { font-size: 16px; }
+  .gp-price-once { font-size: 11px; }
   .gp-price { font-size: 72px; }
   .gp-guarantee { flex-direction: column; text-align: center; gap: 24px; }
   .gp-scene .gp-scene-hit { font-size: 21px; }
@@ -222,5 +247,5 @@ p, li { text-wrap: pretty; }
 
 /* Celulares mais altos: capa um pouco maior, botão continua na primeira tela */
 @media (max-width: 480px) and (min-height: 640px) {
-  .gp-hero-mock img { max-width: 185px; }
+  .gp-hero-mock img { max-width: 150px; }
 }
