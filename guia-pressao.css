@@ -53,7 +53,7 @@ p, li { text-wrap: pretty; }
 .gp-hero { background: radial-gradient(ellipse at 80% 20%, #6e2a43 0%, var(--gp-wine) 40%, var(--gp-wine-deep) 100%); color: var(--gp-ivory); padding: 72px 0 88px; overflow: hidden; }
 .gp-hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
 .gp-tag { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gp-gold-soft); border: 1px solid rgba(217, 168, 69, .45); border-radius: 999px; padding: 7px 16px; margin-bottom: 24px; }
-.gp-hero-mock img { width: 100%; max-width: 420px; margin: 0 auto; filter: drop-shadow(0 26px 40px rgba(0,0,0,.45)); }
+.gp-hero-mock img { width: 100%; max-width: 470px; margin: 0 auto; filter: drop-shadow(0 26px 40px rgba(0,0,0,.45)); }
 
 /* 2. Cena */
 .gp-scene p { font-size: 19px; color: var(--gp-ink-soft); margin-bottom: 16px; }
@@ -202,7 +202,7 @@ p, li { text-wrap: pretty; }
   .gp-hero-grid { grid-template-columns: 1fr; gap: 36px; text-align: center; }
   .gp-hero-copy { order: 2; }
   .gp-hero-mock { order: 1; }
-  .gp-hero-mock img { max-width: 230px; }
+  .gp-hero-mock img { max-width: 260px; }
   .gp-scene-grid { grid-template-columns: 1fr; gap: 28px; }
   .gp-monitor { max-width: 210px; margin: 0 auto; }
   .gp-lead { margin-left: auto; margin-right: auto; }
@@ -248,5 +248,5 @@ p, li { text-wrap: pretty; }
 
 /* Celulares mais altos: capa um pouco maior, botão continua na primeira tela */
 @media (max-width: 480px) and (min-height: 640px) {
-  .gp-hero-mock img { max-width: 160px; }
+  .gp-hero-mock img { max-width: 185px; }
 }
