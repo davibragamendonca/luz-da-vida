@@ -53,7 +53,7 @@ p, li { text-wrap: pretty; }
 .gp-hero { background: radial-gradient(ellipse at 80% 20%, #6e2a43 0%, var(--gp-wine) 40%, var(--gp-wine-deep) 100%); color: var(--gp-ivory); padding: 72px 0 88px; overflow: hidden; }
 .gp-hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
 .gp-tag { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gp-gold-soft); border: 1px solid rgba(217, 168, 69, .45); border-radius: 999px; padding: 7px 16px; margin-bottom: 24px; }
-.gp-hero-mock img { width: 100%; max-width: 400px; margin: 0 auto; border-radius: 6px; transform: rotate(2.5deg); box-shadow: 0 30px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(217,168,69,.4); }
+.gp-hero-mock img { width: 100%; max-width: 420px; margin: 0 auto; filter: drop-shadow(0 26px 40px rgba(0,0,0,.45)); }
 
 /* 2. Cena */
 .gp-scene p { font-size: 19px; color: var(--gp-ink-soft); margin-bottom: 16px; }
@@ -127,7 +127,8 @@ p, li { text-wrap: pretty; }
 .gp-offer-bridge { font-size: 18px; color: var(--gp-ink-soft); margin-bottom: 26px; text-wrap: pretty; }
 .gp-price-row { display: flex; align-items: center; justify-content: center; gap: 28px; margin-bottom: 18px; }
 .gp-price-row .gp-offer-cover { width: 140px; margin: 0; }
-.gp-price-row > div { text-align: left; }
+.gp-price-row > div { text-align: center; }
+.gp-offer-mockup { width: calc(100% + 40px); max-width: none; margin: 0 -20px 10px; }
 .gp-price-12x { font-size: 44px; font-weight: 800; color: #1f6b3f; line-height: 1.1; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 6px; white-space: nowrap; }
 .gp-price-cash { font-size: 18px; color: var(--gp-ink-soft); margin-top: 8px; }
 .gp-price-cash strong { color: var(--gp-ink); }
@@ -222,7 +223,7 @@ p, li { text-wrap: pretty; }
   /* Topo no celular: capa, título e botão na primeira tela */
   .gp-hero { padding: 32px 0 48px; }
   .gp-hero-grid { gap: 24px; }
-  .gp-hero-mock img { max-width: 118px; transform: rotate(2deg); box-shadow: 0 16px 32px rgba(0,0,0,.45), 0 0 0 1px rgba(217,168,69,.4); }
+  .gp-hero-mock img { max-width: 126px; }
   .gp-h1 { font-size: 26px; line-height: 1.15; margin-bottom: 10px; }
   .gp-hero .gp-lead { font-size: 15px; line-height: 1.5; margin-bottom: 16px; }
   .gp-hero .gp-btn { margin-top: 0; }
@@ -247,5 +248,5 @@ p, li { text-wrap: pretty; }
 
 /* Celulares mais altos: capa um pouco maior, botão continua na primeira tela */
 @media (max-width: 480px) and (min-height: 640px) {
-  .gp-hero-mock img { max-width: 150px; }
+  .gp-hero-mock img { max-width: 160px; }
 }
