@@ -114,6 +114,9 @@ p, li { text-wrap: pretty; }
 .gp-stack li::before { content: '✓'; position: absolute; left: 4px; color: #3d7a4f; font-weight: 800; }
 .gp-stack-meta { float: right; margin-left: 12px; font-weight: 500; color: var(--gp-ink-soft); font-size: 14px; white-space: nowrap; }
 .gp-anchor { color: var(--gp-ink-soft); font-size: 16px; margin-bottom: 18px; }
+.gp-stack-val { float: right; margin-left: 12px; font-weight: 500; color: #9a8a8f; font-size: 15px; white-space: nowrap; text-decoration: line-through; }
+.gp-price-total { font-size: 17px; color: var(--gp-ink-soft); margin: 22px 0 4px; }
+.gp-price-total s { color: #b3362f; font-weight: 700; }
 .gp-price-label { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: #a8771f; }
 .gp-price { font-family: var(--gp-display); font-weight: 700; font-size: 84px; line-height: 1; color: var(--gp-wine); }
 .gp-price small { font-size: 32px; vertical-align: top; margin-right: 4px; position: relative; top: 12px; }
