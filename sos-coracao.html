@@ -246,8 +246,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img class="gp-offer-mockup" src="images/sos-coracao/mockup-todos.webp" alt="Guia SOS Coração com o cartão de geladeira e as cartilhas para imprimir" width="1200" height="950" loading="lazy" />
         <div class="gp-price-row">
           <div>
-            <p class="gp-price-12x">12x R$ 6,89</p>
-            <p class="gp-price-cash">ou <strong>R$ 67,00</strong> à vista no Pix</p>
+            <p class="gp-price-12x">12x R$ 4,93</p>
+            <p class="gp-price-cash">ou <strong>R$ 47,90</strong> à vista no Pix</p>
             <p class="gp-price-once">Pagamento único · o material fica com você</p>
           </div>
         </div>
@@ -332,7 +332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Peça o reembolso e recebe 100% do valor de volta.</p></details>
         <details><summary>Quero uma avaliação individual. É possível?</summary><p>Sim. O Dr. Paulo atende presencialmente em São José dos Campos e online, por teleconsulta. <a href="https://wa.link/zazbd5" target="_blank" rel="noopener noreferrer" data-whatsapp-cta>Fale com a equipe no WhatsApp</a>.</p></details>
       </div>
-      <div class="gp-center"><a class="gp-btn" href="#oferta" data-checkout-cta>Quero o guia por R$ 67</a></div>
+      <div class="gp-center"><a class="gp-btn" href="#oferta" data-checkout-cta>Quero o guia por R$ 47,90</a></div>
     </div>
   </section>
 
@@ -351,23 +351,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Barra fixa no celular (aparece depois do topo) -->
 <div class="sc-sticky" id="sc-sticky" aria-hidden="true">
-  <p>SOS Coração<strong>12x R$ 6,89</strong></p>
+  <p>SOS Coração<strong>12x R$ 4,93</strong></p>
   <a class="gp-btn" href="#oferta" data-checkout-cta tabindex="-1">Quero o guia</a>
 </div>
 
 <script>
-  // Link do checkout (Greenn): colar aqui. Vazio = botões rolam até a oferta.
-  var CHECKOUT_URL = '';
+  // Link do checkout (Greenn). O InitiateCheckout é disparado pelo pixel do próprio checkout.
+  var CHECKOUT_URL = 'https://payfast.greenn.com.br/205673/offer/zBLZjV';
 
   document.querySelectorAll('[data-checkout-cta]').forEach(function (el) {
     if (CHECKOUT_URL) {
       el.href = CHECKOUT_URL;
     }
-    el.addEventListener('click', function () {
-      if (CHECKOUT_URL && typeof fbq === 'function') {
-        fbq('track', 'InitiateCheckout', { value: 67, currency: 'BRL', content_name: 'SOS Coração' });
-      }
-    });
   });
 
   document.querySelectorAll('[data-whatsapp-cta]').forEach(function (el) {
