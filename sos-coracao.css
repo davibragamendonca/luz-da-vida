@@ -290,3 +290,16 @@ p, li { text-wrap: pretty; }
   .gp-hero-mock img { max-width: 148px; }
   .gp-h1 { font-size: 23px; }
 }
+
+/* Mobile: guia mais perto da headline, head maior, subheadline mais estreita */
+@media (max-width: 480px) {
+  .gp-hero-grid { gap: 6px; }
+  .gp-hero-mock img { margin-bottom: -18px; }
+  .gp-hero-grid > div:not(.gp-hero-mock) { position: relative; z-index: 1; }
+  .gp-h1 { font-size: 27px; }
+  .gp-hero .gp-lead { max-width: 315px; }
+}
+@media (max-width: 480px) and (max-height: 600px) {
+  .gp-hero-mock img { margin-bottom: -12px; }
+  .gp-h1 { font-size: 24px; }
+}
